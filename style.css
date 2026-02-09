@@ -1,0 +1,163 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE STYLES */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a; /* dark navy */
+  color: #e5e7eb; /* light gray */
+  line-height: 1.6;
+}
+
+/* HERO SECTION */
+.hero {
+  min-height: 100vh;
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #38bdf8; /* accent blue */
+}
+
+.hero h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #cbd5f5;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  background-color: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.buttons a:hover {
+  background-color: #0ea5e9;
+  transform: translateY(-2px);
+}
+/* SECTION STYLES + SCROLL ANIMATION */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 70px 20px;
+
+  /* animation start state */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-left: 4px solid #38bdf8;
+  padding-left: 12px;
+}
+
+.section p,
+.section li {
+  color: #cbd5f5;
+  margin-bottom: 10px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills span {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* EXPERIENCE */
+.experience h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.experience p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.experience ul {
+  padding-left: 20px;
+}
+
+/* LINKS */
+a {
+  color: #38bdf8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 1px solid #1e293b;
+  color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .section {
+    padding: 50px 15px;
+  }
+}
